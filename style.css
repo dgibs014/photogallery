@@ -21,11 +21,11 @@ body {
     text-transform: uppercase;
     text-align: center;
 }
-
+/*
 .grid-item {
 
 }
-
+*/
 .nav-grid {
 grid-template-rows: 1;
 }
@@ -38,24 +38,30 @@ h1 {
     font-size: 3em;
     color: #007d7b;
     background-color: #fff;
-    text-align: center;
+    text-align: left;
+    padding: 10px;
+    margin: 0;
 }
-
+/*
 nav {
 
-    display: grid;
-   /* grid-template-columns: auto;*/
-}
 
+   grid-template-columns: auto;
+}
+*/
 nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     list-style: none;
+    /*position: relative;*/
+
 }
 
 nav li a {
     font-size: 1.5em;
     color: #fff;
     display: inline-block;
-    
+    text-decoration: none;
 }
 
 
@@ -69,8 +75,8 @@ nav li a {
 
 
 main {
-    color: #000;
     background-color: #fff;
+    padding: 10px;
 }
 
 /*
@@ -85,6 +91,7 @@ main {
 
 h2 {
     font-size: 2em;
+    margin: 0;
 }
 
 p {
@@ -104,17 +111,20 @@ footer {
 footer p {
     text-align: center;
 }
-
+/*
 #contact h2 p {
 
 }
-
+*/
 .contact-grid {
     grid-template-rows: 4;
+    grid-template-columns: 1;
+    padding: 10px;
 }
 
 form h3 {
     visibility: hidden;
+    margin: 0;
 }
 
 form #name,#email,#message{
@@ -122,12 +132,17 @@ form #name,#email,#message{
     color: #007d7b;
     font-weight: bold;
     border: none;
+    column-span: 80%;
 }
 
 .submit {
     background-color: #007d7b;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
     border-radius: 5px;
     border: none;
+
 }
 
 @media screen and (min-width:880px) {
