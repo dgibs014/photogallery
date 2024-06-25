@@ -62,7 +62,9 @@ nav ul {
 }
 
 nav ul li:last-of-type {
-    display: none;
+    margin: 0;
+    border: 5px;
+    border-color: #fff;
 }
 
 nav li a {
@@ -79,8 +81,7 @@ nav li a {
     bottom: 0;
     right: 0;
     display: block;
-    border: 5px;
-    border-color: #fff;
+
     z-index: 1;
 }
 
