@@ -4,9 +4,11 @@ black   #000
 white   #fff
 */
 
+/*
 html {
 
 }
+*/
 
 body {
     background-color: #000;
@@ -25,7 +27,7 @@ body {
 }
 
 .nav-grid {
-
+grid-template-rows: 1;
 }
 
 .gallery-grid {
@@ -39,18 +41,32 @@ h1 {
     text-align: center;
 }
 
+nav {
+
+    display: grid;
+   /* grid-template-columns: auto;*/
+}
+
+nav ul {
+    list-style: none;
+}
+
 nav li a {
     font-size: 1.5em;
     color: #fff;
     display: inline-block;
+    
 }
 
-/*
+
 #top {
     position: sticky;
     bottom: 0;
+    display: block;
+    border: 5px;
+    border-color: #fff;
 }
-*/
+
 
 main {
     color: #000;
@@ -85,12 +101,16 @@ footer {
     color: #fff;
 }
 
-#contact {
+footer p {
+    text-align: center;
+}
+
+#contact h2 p {
 
 }
 
 .contact-grid {
-
+    grid-template-rows: 4;
 }
 
 form h3 {
@@ -101,6 +121,7 @@ form #name,#email,#message{
     text-transform: uppercase;
     color: #007d7b;
     font-weight: bold;
+    border: none;
 }
 
 .submit {
@@ -111,22 +132,26 @@ form #name,#email,#message{
 
 @media screen and (min-width:880px) {
     body {
-        max-width: 880px;
-        grid-column: 2;
+        width: 880px;
+        grid-template-columns: 2;
     }
 
-    nav {
-        justify-content: center;
+    #gallery {
+        grid-template-columns: 2;
     }
 }
 
 @media screen and (min-width:1300px) {
     body {
-        max-width: 1300px;
-        grid-column: 3;
+        width: 1300px;
+        grid-template-columns: 3;
     }
 
     nav {
-        justify-content: right;
+        text-align: right;
+    }
+
+    #gallery {
+        grid-template-columns: 3;
     }
 }
